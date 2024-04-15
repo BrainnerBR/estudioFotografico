@@ -1,0 +1,89 @@
+
+#navbarResponsive{
+    font-size: 2vh;
+}
+.navbar-toggler{
+	color: #fff;
+}
+
+#navbarResponsive:hover{
+    text-decoration: underline;
+    transition: 1s ease-in-out;
+}
+.fotografosLanding{
+    margin-top: 5vh;
+    width: 100%;
+    background:url('https://images.unsplash.com/photo-1524230572899-a752b3835840?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    text-align-last: center;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.outer{
+  text-align: -webkit-center;
+}
+/* Timeline Container */
+.timeline {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  max-width: 300px;
+  border: none;
+  margin-bottom: 40px;
+  background: #33333300;
+
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  border: solid rgb(0, 0, 0);
+  padding: 5vh;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  border-radius: 15px;
+  padding: 7px;
+  cursor: pointer;
+}

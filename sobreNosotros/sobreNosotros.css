@@ -1,0 +1,142 @@
+#navbarResponsive {
+    font-size: 2vh;
+}
+
+#navbarResponsive:hover {
+    text-decoration: underline;
+    transition: 1s ease-in-out;
+}
+
+.sobreNosotrosLanding {
+    height: 70vh;
+    padding-top: 20vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.733)), url('/assets/camera2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: aliceblue;
+    text-align-last: center;
+}
+
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #000000;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+	display: table;
+}
+.timeline_content {
+	border: 2px solid #000000;
+	background-color:#fff
+}
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #333;
+	padding: 30px;
+	float: left;
+	text-align: right;
+}
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
+}
+.timeline_content h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: #000000;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.containerBottom {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.733)), url('/assets/camera2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Ajusta el padding vertical */
+    color: #000; /* Color del texto */
+    background-attachment: fixed;
+    margin-bottom: 0; /* Elimina el margen inferior */
+    height: 60vh; /* Asegura que el contenedor tenga al menos la altura de la pantalla */
+}
+
+
+.banner-content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30vh;
+    color: #fff;
+}
+.col-md-6{
+    height: 30vh;
+}
+
+
+
+
+
+
+@media (max-width: 568px) {
+	.timeline-list li:before,
+	ul.timeline-list:before,
+	ul.timeline-list li:before {
+		display: none;
+	}
+	.timeline-list li:nth-child(1),
+	.timeline-list li:nth-child(2) {
+		display: block;
+		width: 100%;
+	}
+	ul.timeline-list li:nth-child(1) .timeline_content, 
+	ul.timeline-list li:nth-child(2) .timeline_content {
+		width: 100%;
+		margin-top: 5vh;
+		text-align: left;
+	}
+	.timeline_content{
+		border: none;
+	}
+	#sobreNosotrosContainer{
+		display: block;
+	}
+    .pt-5, .mt-5{
+        display: block;
+    }
+	.containerBottom{
+		height: 100vh;
+	}
+}

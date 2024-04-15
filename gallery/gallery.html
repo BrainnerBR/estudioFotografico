@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="/assets/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-light " href="#">JBgraphics</a>
+            <button class="navbar-toggler bg-white" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarResponsive" 
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active">
+                      <a class="nav-link text-light link-secondary" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light link-secondary" href="../sobreNosotros/sobreNosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light link-secondary" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light link-secondary" href="../contacto/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="galleryLanding">
+      <div class="containerGallery">
+          <div class="videoContainer">
+              <video autoplay muted loop class="galleryVideo">
+                  <source src="/assets/galleryVideo.mp4" type="video/mp4">
+              </video>
+          </div>
+      </div>
+  </header>
+  
+  
+  <div class="container">
+
+  </div>
+
+    <div class="containerImageGrid">
+        <hr>
+        <ul class="image-gallery">
+          <li>
+            <img src="/assets/boda.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="/assets/wedding2.jpg" alt=""/>
+          </li>
+          <li>
+            <img src="/assets/wedding3.jpg" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1574871786514-46e1680ea587?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="/assets/boda.jpg" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1606490208247-b65be3d94cd1?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1494955870715-979ca4f13bf0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1550784718-990c6de52adf?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <!-- other items here -->
+        </ul>
+      </div>
+      <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img src="" class="lightbox-image" id="lightbox-image">
+      </div>
+
+      <div class="containerImageGrid">
+        <hr>
+        <ul class="image-gallery">
+          <li>
+            <img src="/assets/bosqueByn.jpg" alt="" />
+          </li>
+          <li>
+            <img src="/assets/ninosByn.jpg" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1589785148112-83debe32a7ff?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1487260211189-670c54da558d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="/assets/pianoByn.jpg" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1520279112320-689d45cea674?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1519772068161-ffd92063c4d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1558730234-d8b2281b0d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1536924430914-91f9e2041b83?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1581020296922-1f7baa581f12?q=80&w=1952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1608928586655-36b8e0abf78b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1567186937675-a5131c8a89ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <!-- other items here -->
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col">
+            <img 
+            src="https://images.unsplash.com/photo-1584299950057-e5410d9d78f3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            class="d-block w-100 shadow p-2 mb-3 bg-white rounded"
+            style="clip-path: polygon(0 10%, 100% 0, 100% 80%, 0% 100%);"
+            >
+          </div>
+          <div class="col">
+            <h1>Nuestros estilos de fotografia</h1>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Retratos</li>
+                <li class="list-group-item">Paisajes</li>
+                <li class="list-group-item">Macro</li>
+                <li class="list-group-item">Documental</li>
+                <li class="list-group-item">Abstracta</li>
+                <li class="list-group-item">Urbana</li>
+                <li class="list-group-item">Street Photography</li>
+                <li class="list-group-item">Arquitectura</li>
+                <li class="list-group-item">Deportiva</li>
+                <li class="list-group-item">Minimalista</li>
+
+              </ul>
+          </div>
+      </div>
+      </div>
+
+      <div class="containerImageGrid">
+        <hr>
+        <ul class="image-gallery">
+          <li>
+            <img src="https://images.unsplash.com/photo-1601751316865-4a6de31be28c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1541265337361-e60178d43b83?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1475274226786-e636f48a5645?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1627121136337-51bb8b5473b0?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1568819107248-c5ebc8b62fad?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1473433657392-e7e31b785bc2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1457986811718-8254e452e199?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1515194742420-cda61868a6d9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1480365334925-2aee561aa28e?q=80&w=2096&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1489340469066-8c79cdd36ecc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <li>
+            <img src="https://images.unsplash.com/photo-1489289827069-adf270f4f417?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+          </li>
+          <!-- other items here -->
+        </ul>
+      </div>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
