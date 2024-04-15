@@ -1,9 +1,3 @@
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl);
-});
-
-
 // Agrega un evento clic a cada imagen de la galería
 document.querySelectorAll('.image-gallery img').forEach(img => {
     img.addEventListener('click', () => {
